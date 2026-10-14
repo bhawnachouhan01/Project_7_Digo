@@ -1,0 +1,35 @@
+# Digo - runtime dependencies for the Streamlit application.
+#
+# This file is deliberately SLIM. It contains only what `app.py` imports, so
+# that Streamlit Community Cloud builds quickly and stays inside the free
+# tier's memory limits.
+#
+# It does NOT include torch/transformers (used only for the DistilBERT
+# comparison in the notebook), nor matplotlib/jupyter. Those live in
+# requirements-dev.txt.
+#
+# Versions are pinned to what was actually installed and verified on
+# Python 3.12.7. Install with:
+#     pip install -r requirements.txt
+
+# --- data handling ---
+pandas==2.3.3
+numpy==2.5.4
+
+# --- model: the saved pipeline is unpickled by scikit-learn + joblib ---
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+
+# --- text processing ---
+# nltk is needed for PorterStemmer, which is pure Python and requires NO
+# nltk.download() at runtime - important for cloud deployment.
+nltk==3.10.3
+
+# --- sentiment analysis ---
+# Both ship their lexicons inside the package: no runtime downloads.
+vaderSentiment==3.3.2
+textblob==0.20.1
+
+# --- web application ---
+streamlit==1.65.0
