@@ -75,6 +75,31 @@ hf_cache/
 transformers_cache/
 
 # ---------------------------------------------------------------------------
+# Local-only project files
+# ---------------------------------------------------------------------------
+# This repository is kept to the minimum the Streamlit app needs to run, so the
+# deployed build stays small and fast. Everything below still lives on the
+# development machine - it is simply not published.
+#
+# To publish any of them later:  git add -f <path>
+data/
+notebooks/
+tests/
+reports/
+!reports/figures/16_comparison_with_distilbert.png
+!reports/figures/17_confusion_matrix.png
+!reports/figures/18_roc_pr_curves.png
+make_presentation.py
+PROJECT_PRESENTATION.md
+*.pptx
+pytest.ini
+requirements-dev.txt
+.env.example
+# Modules used only by the notebook, not by the app
+src/modeling.py
+src/evaluation.py
+
+# ---------------------------------------------------------------------------
 # OS / editor
 # ---------------------------------------------------------------------------
 .DS_Store

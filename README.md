@@ -331,7 +331,7 @@ can form.
 
 ## EDA findings
 
-All 20 charts are in [`reports/figures/`](reports/figures/).
+All 20 charts are in `reports/figures/`.
 
 | Question | Answer from the data |
 |---|---|
@@ -494,7 +494,7 @@ that is the whole task.
 All figures below are measured on the **1,497-row held-out test set**,
 which was not used for training, tuning or model selection. They are read directly from
 [`models/model_metadata.json`](models/model_metadata.json) and
-[`reports/model_comparison.csv`](reports/model_comparison.csv), both written by the notebook.
+`reports/model_comparison.csv`, both written by the notebook.
 
 | Model | Accuracy | Precision | Recall | F1 | Macro-F1 | ROC-AUC | CV F1 |
 |---|---|---|---|---|---|---|---|
@@ -696,7 +696,7 @@ deduplicated rows for production. **The reported metrics remain the held-out tes
 above** — the refitted model is never re-scored on data it has now seen.
 
 Notebook Section 14.4 reloads the saved artifacts and asserts predictions are identical,
-and [`tests/test_model.py`](tests/test_model.py) repeats that check in a **fresh Python
+and `tests/test_model.py` repeats that check in a **fresh Python
 process** with no notebook state.
 
 ---
