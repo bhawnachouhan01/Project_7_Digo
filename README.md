@@ -4,6 +4,12 @@
 
 A complete Natural Language Processing pipeline that classifies tweets as **disaster-related** or **non-disaster**, with a deployed Streamlit application.
 
+### 🚀 [**Launch the live app →**](https://project7digo-6nxbuqxvpnitprohz9cjts.streamlit.app/)
+
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?logo=streamlit&logoColor=white)](https://project7digo-6nxbuqxvpnitprohz9cjts.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9.1-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+
 ---
 
 ## Table of contents
@@ -777,9 +783,26 @@ the About Me panel; leave it blank and nothing is shown.
 | Logging degrades gracefully on read-only filesystems | ✅ |
 | No secrets committed | ✅ |
 
-> **Note.** The app is **not currently deployed publicly.** The configuration above has
-> been prepared and verified locally, but no public URL exists. Deploy it yourself with
-> the steps above.
+### 🌐 Live deployment
+
+The app is deployed on Streamlit Community Cloud:
+
+**<https://project7digo-6nxbuqxvpnitprohz9cjts.streamlit.app/>**
+
+| | |
+|---|---|
+| Repository | [`bhawnachouhan01/Project_7_Digo`](https://github.com/bhawnachouhan01/Project_7_Digo) |
+| Branch | `main` |
+| Entry point | `app.py` |
+| Python | 3.12 |
+
+> **Note on access.** Streamlit Community Cloud apps can be public or private. If the
+> link redirects to a sign-in page, the app is still set to private — open the app on
+> [share.streamlit.io](https://share.streamlit.io), go to **Settings → Sharing** and set
+> it to **public** so reviewers can open it without a Streamlit account.
+
+> **Note on cold starts.** Free-tier apps sleep after a period of inactivity. The first
+> request can take 30–60 seconds to wake the container; subsequent loads are fast.
 
 ### Pushing to GitHub
 
