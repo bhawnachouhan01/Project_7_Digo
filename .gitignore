@@ -85,10 +85,11 @@ transformers_cache/
 data/
 notebooks/
 tests/
-reports/
-!reports/figures/16_comparison_with_distilbert.png
-!reports/figures/17_confusion_matrix.png
-!reports/figures/18_roc_pr_curves.png
+# All 20 EDA / evaluation charts are published; the raw comparison CSV is not.
+# NOTE: this must be "reports/*", not "reports/" - git will not descend into a
+# blanket-ignored directory, so a "!" exception inside it would never match.
+reports/*
+!reports/figures/
 make_presentation.py
 PROJECT_PRESENTATION.md
 *.pptx
