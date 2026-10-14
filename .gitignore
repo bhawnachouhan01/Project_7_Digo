@@ -75,30 +75,28 @@ hf_cache/
 transformers_cache/
 
 # ---------------------------------------------------------------------------
-# Local-only project files
+# Local-only files
 # ---------------------------------------------------------------------------
-# This repository is kept to the minimum the Streamlit app needs to run, so the
-# deployed build stays small and fast. Everything below still lives on the
-# development machine - it is simply not published.
+# The repository holds the project-submission deliverables plus everything the
+# Streamlit app needs. The few items below are build scaffolding or temporary
+# files and are deliberately not published.
 #
 # To publish any of them later:  git add -f <path>
-data/
-notebooks/
-tests/
+
+# Build script that regenerates the presentation - not a deliverable
+make_presentation.py
+
+# Documents optional environment variables; the app requires none
+.env.example
+
 # All 20 EDA / evaluation charts are published; the raw comparison CSV is not.
 # NOTE: this must be "reports/*", not "reports/" - git will not descend into a
 # blanket-ignored directory, so a "!" exception inside it would never match.
 reports/*
 !reports/figures/
-make_presentation.py
-PROJECT_PRESENTATION.md
-*.pptx
-pytest.ini
-requirements-dev.txt
-.env.example
-# Modules used only by the notebook, not by the app
-src/modeling.py
-src/evaluation.py
+
+# Office lock files, created while a document is open
+~$*
 
 # ---------------------------------------------------------------------------
 # OS / editor
