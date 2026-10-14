@@ -1,0 +1,24 @@
+# Streamlit configuration for Digo.
+# Works unchanged locally and on Streamlit Community Cloud.
+
+[theme]
+base = "dark"
+primaryColor = "#dc2626"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1a1d24"
+textColor = "#fafafa"
+font = "sans serif"
+
+[server]
+# Keep uploads small - this app only takes typed text.
+maxUploadSize = 2
+headless = true
+
+[browser]
+# Do not send usage statistics.
+gatherUsageStats = false
+
+[client]
+# Never show Python tracebacks to end users; errors are handled in app.py
+# and logged instead.
+showErrorDetails = false
