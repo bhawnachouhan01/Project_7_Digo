@@ -2,6 +2,8 @@
 
 **Project 7 | Data Science & AI Internship**
 
+**Prepared by:** Bhawna Chouhan
+
 A complete Natural Language Processing pipeline that classifies tweets as **disaster-related** or **non-disaster**, with a deployed Streamlit application.
 
 ### 🚀 [**Launch the live app →**](https://project7digo-6nxbuqxvpnitprohz9cjts.streamlit.app/)
